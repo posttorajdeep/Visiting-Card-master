@@ -145,3 +145,11 @@
     text-align: left;
   }
 }
+
+.btn-success{
+  height: 80px;
+}
+
+footer{
+  text-align: center;
+}
