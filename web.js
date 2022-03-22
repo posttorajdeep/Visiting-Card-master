@@ -13,4 +13,3 @@ function closeNav() {
 document.querySelector(".btn-primary").addEventListener("click",(e)=>{
   document.querySelector("#list").classList.toggle("togl");
 })
-
