@@ -1,6 +1,12 @@
    body {
-          font-family: 'Lato', sans-serif;
-          /* background-color: aquamarine; */
+          
+          font-family: 'Mochiy Pop P One', sans-serif;
+          background: url(bg.jpg) no-repeat center center fixed; 
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          color: #0000009a;
         }
 
 .togl{
@@ -152,4 +158,8 @@
 
 footer{
   text-align: center;
+}
+.btn-cent{
+  margin-left: 30%;
+  background-color: green;
 }

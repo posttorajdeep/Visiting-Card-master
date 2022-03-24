@@ -5,16 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="web.css">
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
     <script src="https://kit.fontawesome.com/804a8e323e.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
 <section><!-- carousel -->
@@ -47,17 +59,17 @@
             <div id="myNav" class="overlay" >
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Clients</a>
-                  <a href="#">Contact</a>
+                  <a href="#about-us">About</a>
+                  <a href="#services">Services</a>
+                  <a href="#owner">Owner</a>
+                  <a href="#contacts">Contact</a>
                 </div>
             </div>
                   </div>
                 <span id="my" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> 
 </section>
 
-<section>     <!-- avtar -->
+<section id="owner">     <!-- avtar -->
      <div class="avtar">
          <img src="img/aditya.jpg" id="avtar" alt="">
         <h1>MAYA TRADING COMPANY</h1>
@@ -66,7 +78,7 @@
      </div>
 </section>
 
-<section>          <!-- social media links -->
+<section id="contacts">     <!-- social media links -->
      <div class="social">
         <div class="container">
             <div class="row">
@@ -124,11 +136,9 @@
 </section> 
 
 
-<!-- <a href="https://wa.me/7275153278?text=https://dizitalcard.in/swamialkhanandakriya/#home">whatsapplink</a> -->
-
-<section> <!--- About Us -->
+<section id="about-us"> <!--- About Us -->
   <div class="container text-center mt-4">
-    <span > About Us </span>
+    <h1> About Us </h1>
     <hr class="b-line"> 
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas tenetur corporis sequi quam est. Libero, dolorem nam. Harum facere est voluptatibus libero maiores hic quibusdam optio et ad iusto? Eligendi!
@@ -146,26 +156,25 @@
 
 <section> <!--- Toggle Button-->
   <div class="container d-flex align-items-center justify-content-center">
-    <button type="button" class="btn btn-primary">Opening - Timings</button>
+    <button type="button" class="btn btn-primary mb-3">Opening - Timings</button>
     
   </div>
   <div class="container d-flex align-items-center justify-content-center" >
     <div id="list">
     <ul>
-      <li>
-        ssssss
-      </li>
-      <li>gugjgjg</li>
-      <li>gugjgjg</li>
-      <li>gugjgjg</li>
-      <li>gugjgjg</li>
+      <li>MONDAY: 10:00 AM - 08:00 PM</li>
+      <li>TUESDAY: 10:00 AM - 08:00 PM</li>
+      <li>WEDNESDAY: 10:00 AM - 08:00 PM</li>
+      <li>THURSDAY: 10:00 AM - 08:00 PM</li>
+      <li>FRIDAY: 10:00 AM - 08:00 PM</li>
+      <li>SATURDAY: 10:00 AM - 08:00 PM</li>
+      <li>SUNDAY: 10:00 AM - 08:00 PM</li>
     </ul>
   </div>
   </div>
-
 </section>
 
-<section> <!--Navigation For Services-->
+<!-- <section> Navigation For Services
   <div class="container text-center mt-4">
     <span > Services </span>
     <hr class="b-line"> 
@@ -178,9 +187,9 @@
     </div>
   </div>
     
-</section>
+</section> -->
 
-<section> <!--Grid System-->
+<!-- <section> Grid System
   <div class="container mt-4">
     <ul id="c2">
     <div class="row">
@@ -320,19 +329,157 @@
     </ul>
   </div>
   
+</section> -->
+
+<section id="services" class="container"> <!--Services-->
+  <h1>Services</h1>
+  <hr class="b-line">
+  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+    </li>
+  </ul>
+  
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <div class="container">
+        <div class="row gap-3 mt-3">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">OFFICE</h5>
+                <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card." class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card." class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card." class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gap-3 mt-3">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">OFFICE</h5>
+                <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card." class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card." class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card." class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="container">
+        <div class="row gap-3 mt-3">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">OFFICE</h5>
+                <a href="#" class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="#" class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/3.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="#" class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div class="container">
+        <div class="row gap-3 mt-3">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/1.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">OFFICE</h5>
+                <a href="#" class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="Grid/2.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-center">Spare Parts</h5>
+                <a href="#" class="btn btn-primary btn-cent">WhatsApp</a>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
+<section class="mt-3"> <!--QR -->
   <div class="container d-flex justify-content-center">
     <img src="qrcode.svg" alt="" width="100px">
   </div>
   <div class="container d-flex justify-content-center">
-    <button type="button" class="btn btn-success mt-3 mb-3">Make Your Own Card
-
-      <a href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card.">
+      <a class=" btn btn-success mt-3 mb-3" href="https://wa.me/919451807140?text=Hi%2C%20I%20want%20to%20Create%20my%20own%20Card.">Make Your Own Card
         <img src="imgs\WhatsApp.svg.png" class="social-media-links-img" alt="">
       </a>
-    </button>
   </div>
 </section>
 
